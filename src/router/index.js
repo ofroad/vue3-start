@@ -16,6 +16,30 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/ref",
+    name: "ref",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/ref.vue"),
+  },
+  {
+    path: "/toRef",
+    name: "toRef",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/toRef.vue"),
+  },
+  {
+    path: "/toRefs",
+    name: "toRefs",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/toRefs.vue"),
+  },
+  {
+    path: "/script-setup",
+    name: "script-setup",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/script-setup.vue"),
+  },
 ];
 
 const router = createRouter({
